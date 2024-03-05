@@ -1,0 +1,4 @@
+sudo find /  -xdev -type f ! -user root | wc -l
+
+sudo find /  -xdev -type f ! -user root 
+
