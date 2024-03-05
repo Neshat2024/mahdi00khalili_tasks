@@ -1,0 +1,9 @@
+x: Allows accessing files and subdirectories within the directory. (cd command)  
+
+
+r: Allows listing the contents of the directory. (ls command)
+
+w: Allows adding, removing, and renaming files in the directory. (mkdir , touch commands and etc.)
+- Allows a user to create, delete, or rename files within the directory. 
+- allows a user to delete or rename the directory itself, but not its contents.
+
