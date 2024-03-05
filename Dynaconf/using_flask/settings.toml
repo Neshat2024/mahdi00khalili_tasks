@@ -1,0 +1,12 @@
+[default]
+key = "value"
+a_boolean = false
+number = 1234
+
+[development]
+key = "development value"
+SQLALCHEMY_DB_URI = "sqlite://data.db"
+
+[production]
+key = "production value"
+SQLALCHEMY_DB_URI = "postgresql://..."

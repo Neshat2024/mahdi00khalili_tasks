@@ -1,0 +1,2 @@
+# Secrets don't go to public repos
+.secrets.*
