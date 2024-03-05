@@ -25,3 +25,9 @@ This includes files and directories that match patterns specified in the .gitign
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+* git reset --hard @{upstream}
+
+upstream for a local branch with `master` name is `origin/master` in remote.
+--hard is used for discarding any changes after input commit.
+
+this command is used to reset your current branch to the state of its upstream branch.  
