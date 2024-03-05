@@ -1,0 +1,27 @@
+steps:
+
+- press qk (q is used for start recording and k is the shortcut)
+
+- press 0 ( go to start of the line)
+- press 2l ( move curser 2 charactar right)
+- press x 
+- press $
+- press p
+
+
+- press 0 ( go to start of the line)
+- press l ( move curser 1 charactar right)
+- press x
+- press $
+- press p
+
+- press 0 ( go to start of the line)
+- press x
+- press $
+- press p
+
+- press q
+
+now the macro is recorded. for run it on all lines in this file:
+
+in normal mode >>> :%normal @k
