@@ -1,0 +1,27 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+* git config --global alias.resetfile 'checkout HEAD --'
+
+The command you provided creates a global Git alias named resetfile that you can use to reset a file to its state in the HEAD (latest commit).
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``
+
+* git clean -fd
+
+git clean: This is the Git command used for removing untracked files and directories.
+
+-f: This flag stands for "force" and is required to actually perform the clean operation. Without it, Git will only display what it would remove without actually removing anything.
+
+-d: This flag stands for "directory" and tells Git to also remove untracked directories along with untracked files. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* git clean -fxd
+
+-x: This flag tells Git to remove even ignored files. Ignored files are typically defined in .gitignore.
+
+This includes files and directories that match patterns specified in the .gitignore file, ensuring that Git removes all untracked items, even those that are intentionally ignored. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
