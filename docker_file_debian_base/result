@@ -1,0 +1,12 @@
+steps :
+
+build image      >>> docker build -t debian-shell .
+create container >>> docker run -it debian-shell
+remove /usr      >>> rm -r /usr
+
+result :
+
+
+some of terminal commands dont work...
+ls , ...
+
