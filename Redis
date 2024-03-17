@@ -1,0 +1,123 @@
+
+Redis basic commands
+
+
+1. KEYS pattern : 
+
+The KEYS command takes in a pattern as an argument and returns all the keys that matches that pattern.
+
+example >>>   KEYS *
+
+
+
+2. SET key_name value : 
+
+We can set a key:value pair by using the SET command. 
+This command takes the key name and its corresponding value as arguments.
+
+example >>>   SET fName John
+
+Note: The SET command is also used to update the value of a key.
+
+
+3. GET key_name : 
+
+We can get the value of a key by using the GET command. 
+This command takes the key name as an argument. 
+
+example >>>   GET  fName 
+
+Note: the nil output, which means the key does not exist.
+
+
+4. SETNX key_name value : 
+
+Redis allows us to set a value only if the key doesn’t exist yet with the SETNX command.  
+
+if key_name already exists the output is (integer) 0.
+
+5. APPEND key_name value:
+
+Redis allows us to append data to the end of values with the APPEND command. 
+This command takes the key name and the value to append as arguments.
+
+
+6. DEL key_name: 
+
+If we want to delete a key and its value, we can use the DEL command. 
+
+Note: if key_name already doesn’t exist the output is (integer) 0.
+
+
+7. The asterisk * pattern:
+
+The asterisk symbol represents anything. We can use it with more patterns to help us refine our search for keys.
+
+examples >>> KEYS *
+         >>> KEYS age*
+         >>> KEYS a*
+         >>> KEYS *e
+	 >>> KEYS *g*
+	 
+
+8. FLUSHALL:
+
+The FLUSHALL command is used to clear all the databases on the server, removing all keys and values.
+
+
+9. FLUSHALL ASYNC:
+
+The FLUSHALL command returns only after the database is fully cleared. 
+Depending on the size of the database, this may take some time, 
+which is why we can let it return as soon as the command is received by the server with ASYNC .
+
+10. TTL key_name:
+
+To see if a key has an expiration on it, and when that time expires in seconds, we can use the TTL (Time To Live) command.
+
+Note: The command returns a value of -1, which means that the key has no expiration time.
+      Once the key expires, the output will be different. The command returns a value of -2.
+
+11. EXPIRE key_name seconds:
+
+We can set an expiration on a key by using the EXPIRE command. 
+This command takes the key name and time to expire in seconds as arguments.
+ 
+
+12. SETEX key_name seconds value:
+
+
+We can add an expiration time directly when creating the key with the SETEX command. 
+This command accepts the name of the key, expiration in seconds, and then the value as arguments.
+
+
+13. EXISTS key_name:
+
+We can check if a key exists with the EXISTS command. 
+This command takes the key name as an argument.
+
+
+14. STRLEN key_name:
+
+We can check the length of the value stored in a key with the STRLEN command. 
+This command takes the key name as an argument.
+
+
+15. DUMP key_name:
+
+We can serialize the value of a key in a Redis specific format by using the DUMP command. 
+
+16. RESTORE key_name ttl serializedValue:
+
+
+The serialized value can be restored in this or another database with the RESTORE command. 
+This command takes the new key name, followed by a TTL value and the serialized value as arguments.
+
+17. COMMAND HELP
+
+
+
+
+
+
+
