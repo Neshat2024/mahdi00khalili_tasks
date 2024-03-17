@@ -29,16 +29,28 @@ UNION ALL
 SELECT * FROM table2;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+how to create a table with 10m rows with a single statement?
+
+INSERT INTO my_table (column1, column2)
+SELECT
+    'value1','value2'
+    generate_series(1, 10000000);
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 how to delete all rows of all tables in public schema?
 
 
 how to clone a postgresql database with a new name?
 
 
-how to create a table with 10m rows with a single statement?
-
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 we have a table which all of its columns are numeric, we can imagine that this table is a matrix. how to compute the sum of all cells of this matrix?
+
+SELECT SUM(column1) + SUM(column2) + ... + SUM(columnN) AS total_sum
+FROM your_table_name;
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 how to create a table which can't have more than 1 rows?
