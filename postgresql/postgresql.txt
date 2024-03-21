@@ -31,15 +31,14 @@ SELECT * FROM table2;
 
 how to create a table with 10m rows with a single statement?
 
-INSERT INTO my_table (column1, column2)
-SELECT
-    'value1','value2'
-    generate_series(1, 10000000);
+CREATE TABLE large_table AS
+SELECT generate_series(1, 10000000) AS id;
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 how to delete all rows of all tables in public schema?
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 how to clone a postgresql database with a new name?
 
 
@@ -55,11 +54,15 @@ FROM your_table_name;
 
 how to create a table which can't have more than 1 rows?
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 how to create a table which has single column and fill this table with 10000 first prime numbers (each in one row) ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 how to create a table with 10000 columns?
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 how to create a virtual table with 10000 columns?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
