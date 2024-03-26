@@ -1,0 +1,8 @@
+Function Name: add
+Input Arguments: (2, 3), {}
+Output: 5
+
+Function Name: add
+Input Arguments: (4, 5), {}
+Output: 9
+
